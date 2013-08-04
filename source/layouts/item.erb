@@ -3,5 +3,12 @@
     <h1><%= current_page.data.title %> </h1>
  
     <%= yield %>
+
+    <ul class="images">
+      <% current_page.data.images.each do |img| %>
+        <%= partial 'image', :locals => {:image => img} %>
+      <% end %>
+    </ul>
   </article>
 <% end %>
+
