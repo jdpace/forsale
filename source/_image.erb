@@ -1,4 +1,6 @@
 <li>
-  <%= image_tag image.src, :alt => image.title %>
-  <span><%= image.title %></span>
+  <%= link_to image_tag((image.thumb || image.src), :alt => image.title), asset_path(:images, image.src) %>
+  <% if image.title %>
+    <span><%= image.title %></span>
+  <% end %>
 </li>
