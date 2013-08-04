@@ -1,0 +1,33 @@
+/*
+*= require normalize
+*= require pygment_trac
+*= require layout
+*= require_self
+*/
+
+@charset "utf-8";
+
+article {
+  position: relative;
+
+  &.sold h1, &.sold h2 {
+    &:before {
+      content: "SOLD";
+      position: absolute;
+      top: 0.3em;
+      right: 100%;
+      margin-right: 8px;
+
+      font-size: 10px;
+      font-weight: normal;
+      font-family: helvetica, arial, sans-serif;
+      padding: 0.3em 0.6em;
+      background-color: #FF3333;
+      color: white;
+
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+}

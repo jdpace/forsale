@@ -1,12 +1,3 @@
-/*
-*= require normalize
-*= require pygment_trac
-*= require_self
-*/
-
-
-@charset "utf-8";
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
