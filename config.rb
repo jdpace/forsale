@@ -29,6 +29,16 @@
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 ###
+# Blog
+###
+
+activate :blog do |b|
+  b.layout = 'item'
+  b.prefix = 'items'
+  b.permalink = ':title'
+end
+
+###
 # Helpers
 ###
 

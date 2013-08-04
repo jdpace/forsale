@@ -1,0 +1,7 @@
+<% wrap_layout :layout do %>
+  <article class="<%= current_page.data.sold ? 'sold' : 'for-sale' %>">
+    <h1><%= current_page.data.title %> </h1>
+ 
+    <%= yield %>
+  </article>
+<% end %>
