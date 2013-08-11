@@ -1,5 +1,6 @@
 ---
 title: 2011 Tacoma TRD Sport 4x4
+price: "28,000"
 sold: false
 images:
   - src: 2013-08-04.12.15.32.jpg
