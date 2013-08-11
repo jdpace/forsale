@@ -2,11 +2,15 @@
   <article class="<%= current_page.data.sold ? 'sold' : 'for-sale' %>">
     <h1><%= current_page.data.title %> </h1>
     <span class="price"><%= current_page.data.price %></span>
+
+    <ul class="images">
+      <%= partial 'image', :locals => {:image => current_page.data.images.first} %>
+    </ul>
  
     <%= yield %>
 
     <ul class="images">
-      <% current_page.data.images.each do |img| %>
+      <% current_page.data.images[1..-1].each do |img| %>
         <%= partial 'image', :locals => {:image => img} %>
       <% end %>
     </ul>
