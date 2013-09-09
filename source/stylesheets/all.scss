@@ -7,6 +7,10 @@
 
 @charset "utf-8";
 
+li.make-an-offer {
+  background-color: rgba(50, 150, 200, 0.4);
+}
+
 @mixin label {
   position: absolute;
   top: 0.3em;
